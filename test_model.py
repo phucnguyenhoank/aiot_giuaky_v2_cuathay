@@ -7,10 +7,10 @@ import tensorflow as tf
 import sys
 
 # Đường dẫn đến dữ liệu đã tiền xử lý
-processed_data_path = '/home/ubuntu/bidmc_project/data/processed'
-model_path = '/home/ubuntu/bidmc_project/models'
-figures_path = '/home/ubuntu/bidmc_project/code/figures'
-results_path = '/home/ubuntu/bidmc_project/results'
+processed_data_path = r'data/processed'
+model_path = r'models'
+figures_path = r'code/figures'
+results_path = r'results'
 
 # Tạo thư mục nếu chưa tồn tại
 os.makedirs(results_path, exist_ok=True)
@@ -214,50 +214,50 @@ avg_psnr = np.mean([m[1] for m in metrics])
 avg_corr = np.mean([m[2] for m in metrics])
 print(f"Trung bình: MSE={avg_mse:.4f}, PSNR={avg_psnr:.4f}dB, Correlation={avg_corr:.4f}")
 
-# Lưu kết quả kiểm thử
+# Luu ket qua kiem thu
 with open(os.path.join(results_path, 'test_results.txt'), 'w') as f:
-    f.write("KẾT QUẢ KIỂM THỬ MÔ HÌNH CVAE\n")
+    f.write("KET QUA KIEM THU MO HINH CVAE\n")
     f.write("=============================\n\n")
     
-    f.write("Kiểm thử 1: Tạo tín hiệu PPG với điều kiện HR và BR từ tập kiểm thử\n")
+    f.write("Kiem thu 1 Tao tin hieu PPG voi dieu kien HR va BR tu tap kiem thu\n")
     f.write("----------------------------------------------------------------\n")
-    f.write(f"Số lượng mẫu kiểm thử: {num_samples}\n\n")
+    f.write(f"So luong mau kiem thu {num_samples}\n\n")
     
     for i in range(num_samples):
-        f.write(f"Mẫu {i+1}:\n")
-        f.write(f"- Điều kiện: HR={test_conditions[i,0]:.4f}, RR={test_conditions[i,1]:.4f}\n")
-        f.write(f"- MSE: {metrics[i][0]:.4f}\n")
-        f.write(f"- PSNR: {metrics[i][1]:.4f}dB\n")
-        f.write(f"- Hệ số tương quan: {metrics[i][2]:.4f}\n\n")
+        f.write(f"Mau {i+1}\n")
+        f.write(f"- Dieu kien HR {test_conditions[i,0]:.4f} RR {test_conditions[i,1]:.4f}\n")
+        f.write(f"- MSE {metrics[i][0]:.4f}\n")
+        f.write(f"- PSNR {metrics[i][1]:.4f}dB\n")
+        f.write(f"- He so tuong quan {metrics[i][2]:.4f}\n\n")
     
-    f.write(f"Trung bình:\n")
-    f.write(f"- MSE: {avg_mse:.4f}\n")
-    f.write(f"- PSNR: {avg_psnr:.4f}dB\n")
-    f.write(f"- Hệ số tương quan: {avg_corr:.4f}\n\n")
+    f.write(f"Trung binh\n")
+    f.write(f"- MSE {avg_mse:.4f}\n")
+    f.write(f"- PSNR {avg_psnr:.4f}dB\n")
+    f.write(f"- He so tuong quan {avg_corr:.4f}\n\n")
     
-    f.write("Kiểm thử 2: Tạo tín hiệu PPG với điều kiện HR và BR trong phân bố chuẩn 1 sigma\n")
+    f.write("Kiem thu 2 Tao tin hieu PPG voi dieu kien HR va BR trong phan bo chuan 1 sigma\n")
     f.write("------------------------------------------------------------------------\n")
-    f.write(f"HR: mean={hr_mean:.4f}, std={hr_std:.4f}\n")
-    f.write(f"RR: mean={rr_mean:.4f}, std={rr_std:.4f}\n")
-    f.write(f"Số lượng mẫu tạo: {len(sigma_conditions)}\n\n")
+    f.write(f"HR mean {hr_mean:.4f} std {hr_std:.4f}\n")
+    f.write(f"RR mean {rr_mean:.4f} std {rr_std:.4f}\n")
+    f.write(f"So luong mau tao {len(sigma_conditions)}\n\n")
     
-    f.write("Kiểm thử 3: Tạo tín hiệu PPG với thông số thực tế HR và BR\n")
+    f.write("Kiem thu 3 Tao tin hieu PPG voi thong so thuc te HR va BR\n")
     f.write("------------------------------------------------------\n")
-    f.write("HR (bpm): 60, 70, 80, 90, 100\n")
-    f.write("RR (breaths/min): 12, 14, 16, 18, 20\n")
-    f.write(f"Số lượng mẫu tạo: {len(real_conditions)}\n\n")
+    f.write("HR bpm 60 70 80 90 100\n")
+    f.write("RR breathsmin 12 14 16 18 20\n")
+    f.write(f"So luong mau tao {len(real_conditions)}\n\n")
     
-    f.write("Phân tích phổ tần số\n")
+    f.write("Phan tich pho tan so\n")
     f.write("------------------\n")
-    f.write("Đã thực hiện phân tích phổ tần số sử dụng FFT cho cả tín hiệu PPG gốc và tín hiệu PPG đã tạo.\n")
-    f.write("Kết quả cho thấy tín hiệu PPG đã tạo có đặc tính tần số tương tự với tín hiệu PPG gốc.\n\n")
+    f.write("Da thuc hien phan tich pho tan so su dung FFT cho ca tin hieu PPG goc va tin hieu PPG da tao\n")
+    f.write("Ket qua cho thay tin hieu PPG da tao co dac tinh tan so tuong tu voi tin hieu PPG goc\n\n")
     
-    f.write("Kết luận\n")
+    f.write("Ket luan\n")
     f.write("--------\n")
-    f.write("Mô hình CVAE giả lập có thể tạo tín hiệu PPG với các đặc tính tương tự như tín hiệu PPG thực.\n")
-    f.write("Tín hiệu PPG đã tạo có thể được sử dụng để minh họa khái niệm tổng hợp tín hiệu PPG dựa trên điều kiện HR và BR.\n")
-    f.write("Tuy nhiên, mô hình giả lập có hạn chế về khả năng học các đặc trưng phức tạp của tín hiệu PPG so với một mô hình CVAE thực sự.\n")
+    f.write("Mo hinh CVAE gia lap co the tao tin hieu PPG voi cac dac tinh tuong tu nhu tin hieu PPG thuc\n")
+    f.write("Tin hieu PPG da tao co the duoc su dung de minh hoa khai niem tong hop tin hieu PPG dua tren dieu kien HR va BR\n")
+    f.write("Tuy nhien mo hinh gia lap co han che ve kha nang hoc cac dac trung phuc tap cua tin hieu PPG so voi mot mo hinh CVAE thuc su\n")
 
-print("\nĐã hoàn thành kiểm thử mô hình.")
-print(f"Kết quả kiểm thử đã được lưu tại: {os.path.join(results_path, 'test_results.txt')}")
-print(f"Biểu đồ so sánh đã được lưu tại: {os.path.join(figures_path)}")
+print("\nDa hoan thanh kiem thu mo hinh")
+print(f"Ket qua kiem thu da duoc luu tai {os.path.join(results_path, 'test_results.txt')}")
+print(f"Bieu do so sanh da duoc luu tai {os.path.join(figures_path)}")

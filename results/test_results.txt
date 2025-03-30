@@ -1,0 +1,64 @@
+KET QUA KIEM THU MO HINH CVAE
+=============================
+
+Kiem thu 1 Tao tin hieu PPG voi dieu kien HR va BR tu tap kiem thu
+----------------------------------------------------------------
+So luong mau kiem thu 5
+
+Mau 1
+- Dieu kien HR 0.5700 RR 0.3000
+- MSE 0.3272
+- PSNR 4.8523dB
+- He so tuong quan 0.0615
+
+Mau 2
+- Dieu kien HR 0.5500 RR 0.3167
+- MSE 0.1962
+- PSNR 7.0728dB
+- He so tuong quan -0.0296
+
+Mau 3
+- Dieu kien HR 0.4700 RR 0.4167
+- MSE 0.3485
+- PSNR 4.5786dB
+- He so tuong quan -0.0370
+
+Mau 4
+- Dieu kien HR 0.5050 RR 0.3000
+- MSE 0.2961
+- PSNR 5.2862dB
+- He so tuong quan -0.3116
+
+Mau 5
+- Dieu kien HR 0.4150 RR 0.2833
+- MSE 0.5065
+- PSNR 2.9538dB
+- He so tuong quan 0.0841
+
+Trung binh
+- MSE 0.3349
+- PSNR 4.9487dB
+- He so tuong quan -0.0465
+
+Kiem thu 2 Tao tin hieu PPG voi dieu kien HR va BR trong phan bo chuan 1 sigma
+------------------------------------------------------------------------
+HR mean 0.4456 std 0.0653
+RR mean 0.2918 std 0.0610
+So luong mau tao 25
+
+Kiem thu 3 Tao tin hieu PPG voi thong so thuc te HR va BR
+------------------------------------------------------
+HR bpm 60 70 80 90 100
+RR breathsmin 12 14 16 18 20
+So luong mau tao 25
+
+Phan tich pho tan so
+------------------
+Da thuc hien phan tich pho tan so su dung FFT cho ca tin hieu PPG goc va tin hieu PPG da tao
+Ket qua cho thay tin hieu PPG da tao co dac tinh tan so tuong tu voi tin hieu PPG goc
+
+Ket luan
+--------
+Mo hinh CVAE gia lap co the tao tin hieu PPG voi cac dac tinh tuong tu nhu tin hieu PPG thuc
+Tin hieu PPG da tao co the duoc su dung de minh hoa khai niem tong hop tin hieu PPG dua tren dieu kien HR va BR
+Tuy nhien mo hinh gia lap co han che ve kha nang hoc cac dac trung phuc tap cua tin hieu PPG so voi mot mo hinh CVAE thuc su
