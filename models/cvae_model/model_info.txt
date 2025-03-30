@@ -1,0 +1,10 @@
+THONG TIN MO HINH CVAE (GIA LAP)
+==============================
+
+Tham so mo hinh:
+- Kich thuoc dau vao: 1000
+- Kich thuoc dieu kien: 2
+- Kich thuoc khong gian tiem an: 32
+- So mau trong bang tra cuu: 100
+- So gia tri HR khac nhau: 4
+- So gia tri RR khac nhau: 4

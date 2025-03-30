@@ -1,0 +1,115 @@
+KET QUA PHAN TICH BIEN DOI FOURIER
+==================================
+
+Phuong phap phan tich:
+1. Bien doi Fourier nhanh (FFT) de phan tich pho tan so cua tin hieu PPG goc va tin hieu PPG da tao.
+2. Phuong phap Welch de uoc luong mat do pho cong suat (PSD) cua tin hieu.
+3. Tim cac dinh trong pho tan so de xac dinh cac thanh phan tan so chinh.
+4. Tinh toan cac chi so danh gia trong mien thoi gian va mien tan so.
+
+Ket qua trung binh:
+- MSE (mien thoi gian): 0.3938
+- PSNR: 4.1589dB
+- He so tuong quan: -0.1760
+- MSE (mien tan so): 0.0012
+
+Phan tich chi tiet:
+
+Mau 1:
+- Dieu kien: HR=0.4000, RR=0.2667
+- MSE (mien thoi gian): 0.3303
+- PSNR: 4.8112dB
+- He so tuong quan: 0.0653
+- MSE (mien tan so): 0.0021
+- Cac dinh tan so cua tin hieu goc: 1.38 Hz, 2.62 Hz, 4.00 Hz
+- Cac dinh tan so cua tin hieu da tao: 2.38 Hz, 3.62 Hz, 0.75 Hz
+
+Mau 2:
+- Dieu kien: HR=0.4500, RR=0.3167
+- MSE (mien thoi gian): 0.4427
+- PSNR: 3.5388dB
+- He so tuong quan: -0.4722
+- MSE (mien tan so): 0.0005
+- Cac dinh tan so cua tin hieu goc: 1.50 Hz, 2.88 Hz, 4.38 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.50 Hz, 2.88 Hz, 4.38 Hz
+
+Mau 3:
+- Dieu kien: HR=0.4350, RR=0.3333
+- MSE (mien thoi gian): 0.5739
+- PSNR: 2.4116dB
+- He so tuong quan: -0.5295
+- MSE (mien tan so): 0.0004
+- Cac dinh tan so cua tin hieu goc: 1.38 Hz, 2.75 Hz, 0.00 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.38 Hz, 2.88 Hz, 4.25 Hz
+
+Mau 4:
+- Dieu kien: HR=0.6300, RR=0.2667
+- MSE (mien thoi gian): 0.2888
+- PSNR: 5.3934dB
+- He so tuong quan: -0.0664
+- MSE (mien tan so): 0.0051
+- Cac dinh tan so cua tin hieu goc: 2.12 Hz, 4.12 Hz, 0.00 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.75 Hz, 3.62 Hz, 5.38 Hz
+
+Mau 5:
+- Dieu kien: HR=0.3300, RR=0.0667
+- MSE (mien thoi gian): 0.4017
+- PSNR: 3.9613dB
+- He so tuong quan: -0.3523
+- MSE (mien tan so): 0.0000
+- Cac dinh tan so cua tin hieu goc: 2.25 Hz, 3.38 Hz, 0.75 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.12 Hz, 2.25 Hz, 3.38 Hz
+
+Mau 6:
+- Dieu kien: HR=0.4700, RR=0.2333
+- MSE (mien thoi gian): 0.4223
+- PSNR: 3.7438dB
+- He so tuong quan: -0.6494
+- MSE (mien tan so): 0.0004
+- Cac dinh tan so cua tin hieu goc: 1.25 Hz, 3.25 Hz, 1.88 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.62 Hz, 3.25 Hz, 0.00 Hz
+
+Mau 7:
+- Dieu kien: HR=0.4000, RR=0.2667
+- MSE (mien thoi gian): 0.2861
+- PSNR: 5.4343dB
+- He so tuong quan: -0.0427
+- MSE (mien tan so): 0.0006
+- Cac dinh tan so cua tin hieu goc: 1.00 Hz, 1.88 Hz, 2.88 Hz
+- Cac dinh tan so cua tin hieu da tao: 2.00 Hz, 1.00 Hz, 3.88 Hz
+
+Mau 8:
+- Dieu kien: HR=0.3150, RR=0.3000
+- MSE (mien thoi gian): 0.2892
+- PSNR: 5.3884dB
+- He so tuong quan: 0.5016
+- MSE (mien tan so): 0.0002
+- Cac dinh tan so cua tin hieu goc: 1.00 Hz, 2.00 Hz, 4.12 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.00 Hz, 2.12 Hz, 3.12 Hz
+
+Mau 9:
+- Dieu kien: HR=0.4500, RR=0.3000
+- MSE (mien thoi gian): 0.4448
+- PSNR: 3.5180dB
+- He so tuong quan: -0.2854
+- MSE (mien tan so): 0.0008
+- Cac dinh tan so cua tin hieu goc: 1.50 Hz, 2.12 Hz, 3.00 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.00 Hz, 2.62 Hz, 2.00 Hz
+
+Mau 10:
+- Dieu kien: HR=0.5050, RR=0.3500
+- MSE (mien thoi gian): 0.4583
+- PSNR: 3.3881dB
+- He so tuong quan: 0.0712
+- MSE (mien tan so): 0.0017
+- Cac dinh tan so cua tin hieu goc: 1.62 Hz, 3.38 Hz, 5.00 Hz
+- Cac dinh tan so cua tin hieu da tao: 1.50 Hz, 3.12 Hz, 0.75 Hz
+
+Nhan xet ve pho tan so:
+1. Tin hieu PPG goc thuong co dinh tan so chinh o khoang 1-2 Hz, tuong ung voi nhip tim (60-120 bpm).
+2. Tin hieu PPG da tao cung co xu huong tai tao dinh tan so chinh nay, nhung co the co su khac biet ve bien do.
+3. Cac thanh phan tan so thap (< 0.5 Hz) lien quan den nhip tho thuong kho tai tao chinh xac hon.
+4. Tin hieu PPG da tao co the thieu mot so thanh phan tan so cao (> 5 Hz) so voi tin hieu goc.
+
+Ket luan:
+Phan tich bien doi Fourier cho thay mo hinh CVAE gia lap co the tao ra tin hieu PPG voi cac dac tinh tan so co ban tuong tu nhu tin hieu goc, dac biet la thanh phan tan so lien quan den nhip tim. Tuy nhien, van co su khac biet dang ke trong cac thanh phan tan so chi tiet, dac biet la cac thanh phan tan so thap lien quan den nhip tho va cac thanh phan tan so cao. Dieu nay cho thay mo hinh CVAE thuc su duoc huan luyen day du co the cai thien kha nang tai tao cac dac tinh tan so chi tiet cua tin hieu PPG.

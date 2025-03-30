@@ -1,0 +1,64 @@
+KET QUA DANH GIA MO HINH CVAE
+==============================
+
+Tom tat cac chi so danh gia:
+---------------------------
+MSE (mien thoi gian):
+  - Trung binh: 0.3938
+  - Do lech chuan: 0.0943
+  - Nho nhat: 0.2861
+  - Lon nhat: 0.5739
+
+PSNR (dB):
+  - Trung binh: 4.1589
+  - Do lech chuan: 1.0404
+  - Nho nhat: 2.4116
+  - Lon nhat: 5.4343
+
+He so tuong quan:
+  - Trung binh: -0.1760
+  - Do lech chuan: 0.3477
+  - Nho nhat: -0.6494
+  - Lon nhat: 0.5016
+
+MSE (mien tan so):
+  - Trung binh: 0.0012
+  - Do lech chuan: 0.0015
+  - Nho nhat: 0.0000
+  - Lon nhat: 0.0051
+
+Phan tich anh huong cua HR va RR den tin hieu PPG:
+------------------------------------------------
+1. Anh huong cua HR:
+   - Tan so co ban cua tin hieu PPG ty le thuan voi HR.
+   - Khi HR tang, dinh tan so chinh trong pho tan so dich ve phia tan so cao hon.
+   - Bien do cua tin hieu PPG co xu huong giam khi HR tang.
+
+2. Anh huong cua RR:
+   - RR anh huong chu yeu den thanh phan tan so thap cua tin hieu PPG.
+   - Khi RR tang, bien do cua thanh phan tan so thap (< 0.5 Hz) tang.
+   - RR co anh huong it hon den hinh dang tong the cua tin hieu PPG so voi HR.
+
+Danh gia kha nang tai tao cac dac trung quan trong cua tin hieu PPG:
+----------------------------------------------------------------
+1. Dac trung tan so:
+   - Mo hinh co kha nang tai tao tot dinh tan so chinh (lien quan den HR).
+   - Cac dinh tan so hai bac cao co the khong duoc tai tao chinh xac.
+   - Thanh phan tan so thap (lien quan den RR) thuong kho tai tao chinh xac hon.
+
+2. Dac trung thoi gian:
+   - Hinh dang tong the cua tin hieu PPG duoc tai tao tuong doi tot.
+   - Cac chi tiet nho va bien dong nhanh co the bi mat trong qua trinh tai tao.
+   - Tin hieu tai tao thuong muot hon tin hieu goc, thieu mot so chi tiet nhieu.
+
+Han che cua mo hinh:
+------------------
+1. Mo hinh gia lap khong hoc duoc cac dac trung phuc tap cua tin hieu PPG nhu mot mo hinh CVAE thuc su.
+2. Tin hieu da tao co the khong da dang nhu tin hieu duoc tao boi mot mo hinh CVAE da duoc huan luyen day du.
+3. Mo hinh gia lap khong the noi suy hoac ngoai suy tot cho cac dieu kien HR va RR nam ngoai pham vi cua tap du lieu.
+4. He so tuong quan thap giua tin hieu goc va tin hieu tai tao cho thay con nhieu cai tien can thuc hien.
+5. Mo hinh hien tai chua tinh den cac yeu to khac co the anh huong den tin hieu PPG nhu tuoi, gioi tinh, tinh trang suc khoe, v.v.
+
+Ket luan:
+--------
+Mo hinh CVAE gia lap da chung minh kha nang tao ra tin hieu PPG voi cac dac tinh co ban tuong tu nhu tin hieu thuc, dac biet la cac dac tinh tan so lien quan den nhip tim (HR) va nhip tho (RR). Tuy nhien, van con nhieu han che can duoc cai thien trong mot mo hinh CVAE thuc su duoc huan luyen day du. Ket qua nay cho thay tiem nang cua viec su dung mo hinh CVAE de tong hop tin hieu PPG.

@@ -1,0 +1,23 @@
+KET QUA MO HINH CVAE GIA LAP
+============================
+
+Mo ta mo hinh:
+Mo hinh CVAE gia lap duoc tao de minh hoa khai niem tong hop tin hieu PPG dua tren dieu kien HR va BR.
+Mo hinh nay su dung phuong phap tra cuu va noi suy de tao tin hieu PPG tu cac mau co san trong tap du lieu.
+
+Phuong phap tao tin hieu:
+1. Tao bang tra cuu tu cac mau trong tap huan luyen, anh xa gia tri HR va RR den cac tin hieu PPG tuong ung.
+2. Khi nhan dieu kien HR va RR moi, tim cac mau gan nhat trong bang tra cuu.
+3. Neu co mau thoa man ca HR va RR, su dung mau do lam co so.
+4. Neu khong co mau thoa man ca hai, su dung mau thoa man HR va dieu chinh de phan anh RR.
+5. Them nhieu ngau nhien de tao su da dang va chuan hoa lai tin hieu.
+
+Ket qua:
+- Da tao 25 tin hieu PPG voi cac dieu kien HR va RR khac nhau.
+- Phan tich pho tan so cho thay tin hieu da tao co dac tinh tan so tuong tu voi tin hieu goc.
+- Tin hieu da tao co the duoc su dung de minh hoa khai niem tong hop tin hieu PPG dua tren dieu kien HR va BR.
+
+Han che:
+- Mo hinh gia lap khong hoc duoc cac dac trung phuc tap cua tin hieu PPG nhu mot mo hinh CVAE thuc su.
+- Tin hieu da tao co the khong da dang nhu tin hieu duoc tao boi mot mo hinh CVAE da duoc huan luyen day du.
+- Mo hinh gia lap khong the noi suy hoac ngoai suy tot cho cac dieu kien HR va RR nam ngoai pham vi cua tap du lieu.

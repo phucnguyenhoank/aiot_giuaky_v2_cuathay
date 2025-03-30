@@ -1,0 +1,15 @@
+THONG TIN MO HINH CVAE
+=====================
+
+Tham so mo hinh:
+- Kich thuoc dau vao: 1000
+- Kich thuoc dieu kien: 2
+- Kich thuoc khong gian tiem an: 32
+- So don vi an trong cac lop: [256, 128, 64]
+- Kich thuoc batch: 64
+- So epoch: 50
+- Toc do hoc: 0.001
+
+Kich thuoc du lieu:
+- Tap huan luyen: 5045 mau
+- Tap kiem thu: 1262 mau

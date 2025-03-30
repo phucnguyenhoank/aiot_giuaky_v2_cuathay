@@ -1,0 +1,10 @@
+CAU TRUC DU LIEU TRONG BIDMC PPG AND RESPIRATION DATASET
+=================================================
+
+Cac khoa trong file .mat:
+- __header__
+- __version__
+- __globals__
+- data
+
+ Thong tin chi tiet ve cau truc du lieu duoc luu trong file nay.
